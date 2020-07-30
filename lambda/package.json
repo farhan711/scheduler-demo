@@ -1,0 +1,8 @@
+{
+    "name": "cloud_zies_test",
+    "version": "1.0.0",
+    "author": "Alberto Crespo",
+    "dependencies": {
+        "nodemailer": "^6.4.8"
+    }
+}
