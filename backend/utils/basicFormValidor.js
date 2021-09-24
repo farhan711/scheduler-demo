@@ -11,10 +11,8 @@ exports.basicValidation = (formBody) => {
         || !formBody.fileType || formBody.fileType.length === 0
         || (formBody.schedule && !formBody.scheduledTime)
         || (formBody.schedule && isNaN(formBody.scheduledTime) && typeof Date.parse(formBody.scheduledTime) != 'number') )  {
-            
             valid = false
-    } 
-    
+    }
     for(var i=0; i<formBody.to.length; i++) {
       if(!testEmail.test(formBody.to[i])) {
         valid = false
