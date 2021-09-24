@@ -2,6 +2,6 @@
     "name": "scheduler-demo",
     "version": "1.0.0",
     "dependencies": {
-        "nodemailer": "^6.4.8"
+        "nodemailer": "^6.6.5"
     }
 }
