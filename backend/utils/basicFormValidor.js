@@ -2,7 +2,7 @@
 exports.basicValidation = (formBody) => {
 
     var valid = true
-    var testEmail =    /^[ ]*([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})[ ]*$/i;
+    var testEmail = /^[ ]*([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})[ ]*$/i;
 
     if ( !formBody || !formBody.to || !Array.isArray(formBody.to)
         || !formBody.subject || formBody.subject.length === 0 
