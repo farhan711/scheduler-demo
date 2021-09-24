@@ -1,4 +1,4 @@
-# React-S3-fileuploads
+### Email scheduler using AWS S3
 System that handles the sending of hundreds of emails using AWS.
 
 ### Components
