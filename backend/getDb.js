@@ -37,9 +37,7 @@ module.exports.get = async (event, context, callback) => {
 };
 
 const scanTable = async (tableName) => {
-    const params = {
-        TableName: tableName,
-    };
+    const params = { TableName: tableName };
 
     let scanResults = [];
     let items;
@@ -47,8 +45,6 @@ const scanTable = async (tableName) => {
         items =  await documentClient.scan(params).promise();
         items.Items.forEach((item) => scanResults.push(item));
         params.ExclusiveStartKey  = items.LastEvaluatedKey;
-    }while(typeof items.LastEvaluatedKey != "undefined");
-
+    } while(typeof items.LastEvaluatedKey != "undefined");
     return scanResults;
-
 }
