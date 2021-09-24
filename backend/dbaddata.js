@@ -14,7 +14,6 @@ for(var i = 0; i < 1; i++){
           'email' : {S: `bst+${makeid(2)}@test.com`},
         },
       };
-      
       // Call DynamoDB to add the item to the table
       ddb.putItem(params, function(err, data) {
         if (err) {
